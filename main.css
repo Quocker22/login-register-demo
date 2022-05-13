@@ -1,0 +1,91 @@
+#contaner{
+    margin: 0 auto;
+    width: 400px;
+    height: 500px;
+    background-color: rgba(81,226,189, 0.8)
+}
+
+.header{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    padding-bottom:  10px;
+    border-bottom: 1px solid;
+}
+
+.sub a{
+    font-size: 1.6rem;
+    text-decoration: none;
+    font-family:'Times New Roman', Times, serif
+}
+
+.sub{
+    padding: 10px;
+    background-color: rgb(225, 223, 223);
+    display: inline-block;
+    text-align: center;
+    width: 130px;
+    margin-top: 5px;
+    border-radius: 4px;
+    box-shadow: 0 1px salmon;
+}
+
+.sub:hover{
+    cursor: pointer;
+    opacity: .6;
+}
+
+.register{
+    margin-right: 3px;
+}
+
+.login{
+    margin-left: 3px;
+    background-color: rgb(163, 238, 163);
+
+}
+
+#form-register{
+    display: none;
+    width: 400px;
+    height: 434px;
+    background-color: rgba(176, 168, 168, 0.8)
+  
+}
+
+#form-login{
+    display: none;
+    width: 400px;
+    height: 434px;
+    background-color: rgba(243, 235, 4, 0.8)
+  
+}
+
+.all {
+    display: flex;
+    flex-direction: column;
+}
+
+.notiction{
+    text-transform: uppercase;
+}
+
+
+.sub-total{
+    display: flex;
+    margin: 5px 0;
+    line-height: 30px;
+}
+
+.sex,
+.total{
+    flex: 2;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.center{
+    flex: 3;
+   margin-right: 50px;
+}
+

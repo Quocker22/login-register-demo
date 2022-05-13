@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    
+    <div id="contaner">
+        <div class="header">
+            <div class="sub register" onclick="onRegister()"><a href="#">Đăng ký </a></div>
+            <div class="sub login" onclick="onLogin()"><a href="#">Đăng nhập </a></div>
+            
+        </div>
+
+        <div id="form-register">
+            <form name="formregister" action="notext">
+                <div class="all">
+                    <h2 class = "notiction">Đăng ký thành viên</h2>
+                    <div class="sub-total">
+                        <span class="total">Tên đăng nhập:</span>
+                        <input type="Nhập tên đang ký" class="center" id="nameRegister" >
+                    </div>
+                    <div class="sub-total">
+                        <span class="total">Mật khẩu:</span>
+                        <input type="Nhập mật khẩu" class="center" id="passRegister" >
+                    </div>
+                    <div class="sub-total">
+                        <span class="total">Email:</span>
+                        <input type="Nhập email" class="center" id="emailRegister" >
+                    </div>
+                    <div class="sub-total">
+                        <span class="total" href="">Giới tính</span>
+                    <select name="cars" class="center">
+                        <option value="Nam">Nam</option>
+                        <option value="Nữ">nữ</option>
+                      </select>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div id="form-login">
+            <form name="formlogin" action="notext">
+                
+            </form>
+        </div>
+
+    </div>
+
+</body>
+
+<script>
+    // register
+    function onRegister(){
+        var tabRegister =document.getElementById("form-register");
+        var tabLogin =document.getElementById("form-login");
+        tabRegister.style.display = "block";
+        tabLogin.style.display = "none";
+    }
+
+    //login
+    function onLogin(){
+        var tabRegister =document.getElementById("form-register");
+        var tabLogin =document.getElementById("form-login");
+        tabRegister.style.display = "none";
+        tabLogin.style.display = "block";
+    }
+
+
+</script>
+</html>
