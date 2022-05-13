@@ -1,3 +1,7 @@
+body {
+    height: 100vh;
+    background-image: linear-gradient(purple, pink); 
+}
 #contaner{
     margin: 0 auto;
     width: 400px;
@@ -11,6 +15,7 @@
     justify-content: center;
     padding-bottom:  10px;
     border-bottom: 1px solid;
+    background-color: rgba(81,226,189, 0.8);
 }
 
 .sub a{
@@ -42,23 +47,20 @@
 .login{
     margin-left: 3px;
     background-color: rgb(163, 238, 163);
-
 }
 
 #form-register{
     display: none;
     width: 400px;
     height: 434px;
-    background-color: rgba(176, 168, 168, 0.8)
-  
+    background-color: rgba(81,226,189, 0.8)
 }
 
 #form-login{
     display: none;
     width: 400px;
     height: 434px;
-    background-color: rgba(243, 235, 4, 0.8)
-  
+    background-color: rgba(81,226,189, 0.8)
 }
 
 .all {
@@ -68,6 +70,7 @@
 
 .notiction{
     text-transform: uppercase;
+    text-align: center;
 }
 
 
@@ -77,7 +80,6 @@
     line-height: 30px;
 }
 
-.sex,
 .total{
     flex: 2;
     text-align: left;
