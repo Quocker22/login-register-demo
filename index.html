@@ -28,6 +28,7 @@
                     <div class="sub-total">
                         <span class="total">Mật khẩu:</span>
                         <input type="password" class="center" id="passRegister" placeholder="Nhập mật khẩu">
+                        <span class="show-btn"><i class="fas fa-eye"></i></span>
                     </div>
                     <div class="sub-total">
                         <span class="total">Nhập lại Mật khẩu:</span>
@@ -70,6 +71,11 @@
                         <span class="total">Mật khẩu:</span>
                         <input type="password" class="center" id="passLogin" placeholder="Nhập mật khẩu" >
                     </div>
+                    <div class="checkbox">
+                        <span class="checkbox-item">
+                            click vào đây để đăng ký <a onclick="onRegister()"> Đăng ký </a>
+                        </span>
+                    </div>
                     <div >
                         <div class="sub login switchIn"><a href="#">Đăng nhập </a></div>
                     </div>
@@ -80,6 +86,7 @@
     </div>
 
     <div id="print-Info">
+        print: <br/>
         User name: <span id="name"></span><br/>
         Password: <span id="pass"></span><br/>
         Email: <span id="email"></span><br/>

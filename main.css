@@ -52,7 +52,7 @@ body {
 
 #form-register{
     position: relative;
-    display: none;
+    display: block;
     width: 400px;
     height: 434px;
     background-color: rgba(81,226,189, 0.8)
