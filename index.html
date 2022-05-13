@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./main.css">
+    <script src="main.js"></script>
 </head>
 <body>
     
@@ -15,16 +16,14 @@
             <div class="sub login" onclick="onLogin()"><a href="#">Đăng nhập </a></div>
             
         </div>
-
+<!-- register -->
         <div id="form-register">
             <form name="formregister" action="notext">
                 <div class="all">
-
                     <h2 class = "notiction">Đăng ký thành viên</h2>
-
                     <div class="sub-total">
                         <span class="total">Tên đăng nhập:</span>
-                        <input type="text" class="center" id="nameRegister" placeholder="Nhập tên đăng nhập">
+                        <input type="text" class="center" id="nameRegister" placeholder="Nhập tên đăng nhập" value="qwerqwef">
                     </div>
                     <div class="sub-total">
                         <span class="total">Mật khẩu:</span>
@@ -32,7 +31,7 @@
                     </div>
                     <div class="sub-total">
                         <span class="total">Nhập lại Mật khẩu:</span>
-                        <input type="password" class="center" id="passRegister" placeholder="Nhập lại mật khẩu">
+                        <input type="password" class="center" placeholder="Nhập lại mật khẩu">
                     </div>
                     <div class="sub-total">
                         <span class="total">Email:</span>
@@ -40,36 +39,73 @@
                     </div>
                     <div class="sub-total">
                         <span class="total" href="">Giới tính</span>
-                    <select name="cars" class="center">
+                    <select name="cars" class="center" id="sexRegister" >
                         <option value="Nam">Nam</option>
                         <option value="Nữ">Nữ</option>
                       </select>
                     </div>
+                    <div class="checkbox">
+                        <input type="checkbox">
+                        <span class="checkbox-item">
+                            Bạn có đồng ý với <a> điều khoản </a> & <a>dịch vụ</a> của chúng tôi !
+                        </span>
+                    </div>
+                    <div >
+                        <div class="sub register switchIn"  onclick="printInfo()"><a href="#">Đăng ký </a></div>
+                    </div>
                 </div>
             </form>
         </div>
+<!-- login -->
         <div id="form-login">
             <form name="formlogin" action="notext">
                 <div class="all">
-
                     <h2 class = "notiction">Đăng nhập</h2>
 
                     <div class="sub-total">
                         <span class="total">Tên đăng nhập:</span>
-                        <input type="text" class="center" id="nameRegister" placeholder="Nhập tên đăng nhập">
+                        <input type="text" class="center" id="nameLogin" placeholder="Nhập tên đăng nhập">
                     </div>
                     <div class="sub-total">
                         <span class="total">Mật khẩu:</span>
-                        <input type="password" class="center" id="passRegister" placeholder="Nhập mật khẩu" >
+                        <input type="password" class="center" id="passLogin" placeholder="Nhập mật khẩu" >
                     </div>
+                    <div >
+                        <div class="sub login switchIn"><a href="#">Đăng nhập </a></div>
+                    </div>
+                </div>
             </form>
         </div>
 
     </div>
 
+    <div id="print-Info">
+        User name: <span id="name"></span><br/>
+        Password: <span id="pass"></span><br/>
+        Email: <span id="email"></span><br/>
+        Giới tính: <span id="sex"></span>
+    </div>
 </body>
 
 <script>
+    
+function printInfo(){
+    var name = document.getElementById("name");
+    var pass = document.getElementById("pass");
+    var email = document.getElementById("email");
+    var sex = document.getElementById("sex");
+    var dowName = document.getElementById("nameRegister");
+    var dowpass = document.getElementById("passRegister");
+    var dowEmail = document.getElementById("emailRegister");
+    var dowSex = document.getElementById("sexRegister");
+    var display = document.getElementById("print-Info");
+    name.innerHTML = dowName.value;
+    pass.innerHTML = dowpass.value;
+    email.innerHTML = dowEmail.value;
+    sex.innerHTML = dowSex.value;
+    display.style.display = "inline-block"
+}
+
     // register
     function onRegister(){
         var tabRegister =document.getElementById("form-register");
