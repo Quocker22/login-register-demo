@@ -46,13 +46,13 @@
                       </select>
                     </div>
                     <div class="checkbox">
-                        <input type="checkbox">
+                        <input type="checkbox" onclick="checkBox(1)">
                         <span class="checkbox-item">
                             Bạn có đồng ý với <a> điều khoản </a> & <a>dịch vụ</a> của chúng tôi !
                         </span>
                     </div>
-                    <div >
-                        <div class="sub register switchIn"  onclick="printInfo()"><a href="#">Đăng ký </a></div>
+                    <div  id="check-box__onOff">
+                        <div class="sub register switchIn" onclick="printInfo()"><a href="#">Đăng ký </a></div>
                     </div>
                 </div>
             </form>
@@ -94,41 +94,4 @@
     </div>
 </body>
 
-<script>
-    
-function printInfo(){
-    var name = document.getElementById("name");
-    var pass = document.getElementById("pass");
-    var email = document.getElementById("email");
-    var sex = document.getElementById("sex");
-    var dowName = document.getElementById("nameRegister");
-    var dowpass = document.getElementById("passRegister");
-    var dowEmail = document.getElementById("emailRegister");
-    var dowSex = document.getElementById("sexRegister");
-    var display = document.getElementById("print-Info");
-    name.innerHTML = dowName.value;
-    pass.innerHTML = dowpass.value;
-    email.innerHTML = dowEmail.value;
-    sex.innerHTML = dowSex.value;
-    display.style.display = "inline-block"
-}
-
-    // register
-    function onRegister(){
-        var tabRegister =document.getElementById("form-register");
-        var tabLogin =document.getElementById("form-login");
-        tabRegister.style.display = "block";
-        tabLogin.style.display = "none";
-    }
-
-    //login
-    function onLogin(){
-        var tabRegister =document.getElementById("form-register");
-        var tabLogin =document.getElementById("form-login");
-        tabRegister.style.display = "none";
-        tabLogin.style.display = "block";
-    }
-
-
-</script>
 </html>

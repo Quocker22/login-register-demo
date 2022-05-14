@@ -135,3 +135,7 @@ body {
     background-color: #fff;
 }
 
+
+#check-box__onOff{
+    display: none;
+}
