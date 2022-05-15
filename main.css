@@ -139,3 +139,10 @@ body {
 #check-box__onOff{
     display: none;
 }
+
+/* try */
+
+.change{
+    font-weight: 600;
+    color: #ec0c0c;
+}

@@ -23,7 +23,7 @@
                     <h2 class = "notiction">Đăng ký thành viên</h2>
                     <div class="sub-total">
                         <span class="total">Tên đăng nhập:</span>
-                        <input type="text" class="center" id="nameRegister" placeholder="Nhập tên đăng nhập" value="qwerqwef">
+                        <input type="text" class="center" id="nameRegister" placeholder="Nhập tên tài khoản" value="">
                     </div>
                     <div class="sub-total">
                         <span class="total">Mật khẩu:</span>
@@ -46,7 +46,8 @@
                       </select>
                     </div>
                     <div class="checkbox">
-                        <input type="checkbox" onclick="checkBox(1)">
+                        <!-- <input type="checkbox" id="action" value="1"/>  -->
+                        <input type="checkbox" id="action" value="1" onclick="checkBox(1)">
                         <span class="checkbox-item">
                             Bạn có đồng ý với <a> điều khoản </a> & <a>dịch vụ</a> của chúng tôi !
                         </span>
@@ -87,11 +88,15 @@
 
     <div id="print-Info">
         print: <br/>
-        User name: <span id="name"></span><br/>
-        Password: <span id="pass"></span><br/>
-        Email: <span id="email"></span><br/>
-        Giới tính: <span id="sex"></span>
+        User name: <span class="change" id="name"></span><br/>
+        Password: <span class="change" id="pass"></span><br/>
+        Email: <span class="change" id="email"></span><br/>
+        Giới tính: <span class="change" id="sex"></span>
     </div>
-</body>
 
+    <!-- try -->
+</body>
+<script>
+   
+</script> 
 </html>
