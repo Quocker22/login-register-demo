@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./main.css">
-    <script src="main.js"></script>
+    <script src="mainjs.js"></script>
 </head>
 <body>
     
@@ -47,12 +47,12 @@
                     </div>
                     <div class="checkbox">
                         <!-- <input type="checkbox" id="action" value="1"/>  -->
-                        <input type="checkbox" id="action" value="1" onclick="checkBox(1)">
+                        <input type="checkbox" id="action" value="1" onclick="checkBox()">
                         <span class="checkbox-item">
                             Bạn có đồng ý với <a> điều khoản </a> & <a>dịch vụ</a> của chúng tôi !
                         </span>
                     </div>
-                    <div  id="check-box__onOff">
+                    <div id="check-box__onOff">
                         <div class="sub register switchIn" onclick="printInfo()"><a href="#">Đăng ký </a></div>
                     </div>
                 </div>
@@ -97,6 +97,15 @@
     <!-- try -->
 </body>
 <script>
-   
-</script> 
+   document.getElementById('action').onclick = function(e){
+        var onOff = document.getElementById('check-box__onOff');
+        if (this.checked){
+            onOff.style.display ="inline-block";
+        }
+        else{
+            onOff.style.display ="none";
+        }
+    };
+
+</script>
 </html>

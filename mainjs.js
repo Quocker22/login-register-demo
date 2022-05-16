@@ -56,13 +56,4 @@ function printInfo(){
 
     // check box
 
-    document.getElementById('action').onclick = function(e){
-        var onOff = document.getElementById("check-box__onOff");
-        if (this.checked){
-            onOff.style.display ="inline-block";
-
-        }
-        else{
-            onOff.style.display ="none";
-        }
-    };
+ 
